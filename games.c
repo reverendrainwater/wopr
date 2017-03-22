@@ -64,50 +64,50 @@ void gameLst(){
 	prtGmes();
 	scanf("%d", &swp);
 	switch (swp){
-		case 1:clear();
-			   break;
-		case 2:clear();
-			   break;
-		case 3:clear();
-			   break;
-		case 4:clear();
-			   break;
-		case 5:clear();
-			   break;
-		case 6:clear();
-			   break;
-		case 7:clear();
-			   break;
-		case 8:clear();
-			   break;
-		case 9:clear();
-			   break;
-		case 10:clear();
-			    break;
-		case 11:clear();
-			    break;
-		case 12:clear();
-			    break;
-		case 13:clear();
-			    break;
-		case 14:clear();
-				break;
-		case 15:clear();
-				slowPrint("\nWOULDN'T YOU PREFER A NICE GAME OF CHESS?\n", 1);
-				scanf("%s", ans);
-				if (answYN(ans) == 0){
-
-				} else if (answYN(ans) == 1){
-					usleep(1000000);
-					slowPrint("\nVERY WELL PROFESSOR FALKEN.", 1);
-					usleep(1000000);
-					breaker();
-				} else {
-					slowPrint("I DO NOT UNDERSTAND YOUR ANSWER.", 2);
-					slowPrint(CONTERM, 1);
-				}
-				break;
-		case 60:playTTT();
-				break;
+	case 0:playTTT();
+	    break;
+	case 1:clear();
+	  break;
+	case 2:clear();
+	  break;
+	case 3:clear();
+	  break;
+	case 4:clear();
+	  break;
+	case 5:clear();
+	  break;
+	case 6:clear();
+	  break;
+	case 7:clear();
+	  break;
+	case 8:clear();
+	  break;
+	case 9:clear();
+	  break;
+	case 10:clear();
+	  break;
+	case 11:clear();
+	  break;
+	case 12:clear();
+	  break;
+	case 13:clear();
+	  break;
+	case 14:clear();
+	  break;
+	case 15:clear();
+	  slowPrint("\nWOULDN'T YOU PREFER A NICE GAME OF CHESS?\n", 1);
+	  scanf("%s", ans);
+	  if (answYN(ans) == 0){
+	    
+	  } else if (answYN(ans) == 1){
+	    usleep(1000000);
+	    slowPrint("\nVERY WELL PROFESSOR FALKEN.", 1);
+	    usleep(1000000);
+	    breaker();
+	  } else {
+	    slowPrint("I DO NOT UNDERSTAND YOUR ANSWER.", 2);
+	    slowPrint(CONTERM, 1);
+	  }
+	  break;
 	}
 }

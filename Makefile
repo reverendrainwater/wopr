@@ -14,8 +14,8 @@ CFLAGS = -Wall -I -g -o
 OBJS = wopr.c ttt.c actions.c nuclear.c games.c
 HDRS = wopr.h
 
-wopr: $(HDRS)
+wopr: $(OBJS) $(HDRS)
 	$(CC) $(OBJS) $(CFLAGS) wopr 
 
 clean:
-	rm -f *.o
+	rm -f *.o wopr
